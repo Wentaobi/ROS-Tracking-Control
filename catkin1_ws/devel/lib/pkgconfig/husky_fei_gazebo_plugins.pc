@@ -1,0 +1,8 @@
+prefix=/home/wen/Desktop/catkin_ws/devel
+
+Name: husky_fei_gazebo_plugins
+Description: Description of husky_fei_gazebo_plugins
+Version: 0.0.3
+Cflags: -I/home/wen/Desktop/catkin_ws/src/fei_ros_gazebo_husky/husky_fei_simulator/husky_fei_gazebo_plugins/include
+Libs: -L/home/wen/Desktop/catkin_ws/devel/lib -lhusky_fei_gazebo_plugins
+Requires: gazebo_plugins gazebo_ros gazebo_msgs roscpp std_msgs

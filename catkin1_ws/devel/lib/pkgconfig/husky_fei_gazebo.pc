@@ -1,0 +1,8 @@
+prefix=/home/wen/Desktop/catkin_ws/devel
+
+Name: husky_fei_gazebo
+Description: Description of husky_fei_gazebo
+Version: 0.0.3
+Cflags: 
+Libs: -L/home/wen/Desktop/catkin_ws/devel/lib 
+Requires: 

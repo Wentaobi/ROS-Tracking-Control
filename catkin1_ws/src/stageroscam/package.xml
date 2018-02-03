@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>stageroscam</name>
+  <version>1.0.0</version>
+  <description>This package provides Stage IGVC world with camera support</description>
+
+  <maintainer email="udm.amrl@gmail.com">UDM AMRL lab</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/stageroscam</url>
+  <url type="repository">https://github.com/ros-simulation/stageroscam</url>
+  <url type="bugtracker">https://github.com/ros-simulation/stageroscam/issues</url>
+
+  <author email="udm.amrl@gmail.com">UDM AMRL lab</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>stage_ros</run_depend>
+
+</package>

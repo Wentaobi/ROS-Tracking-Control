@@ -1,0 +1,8 @@
+prefix=/home/wen/Desktop/catkin_ws/devel
+
+Name: hector_gazebo_thermal_camera
+Description: Description of hector_gazebo_thermal_camera
+Version: 0.3.4
+Cflags: -I/home/wen/Desktop/catkin_ws/devel/include -I/home/wen/Desktop/catkin_ws/src/fei_ros_gazebo_husky/hector_gazebo-hydro-devel/hector_gazebo_thermal_camera/include
+Libs: -L/home/wen/Desktop/catkin_ws/devel/lib 
+Requires: nodelet image_transport dynamic_reconfigure driver_base gazebo_plugins

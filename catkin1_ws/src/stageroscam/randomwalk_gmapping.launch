@@ -1,0 +1,38 @@
+
+
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  <node pkg="stage_ros" type="stageros" name="IGVC_stage" args="$(find stageroscam)/world/20Mx20Mmod.world" output="screen">
+  </node>
+  <node pkg="random_walk" type="random_walk" name="random_walk"  output="screen">
+  </node>
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" args="scan:=base_scan" output="screen">
+    <rosparam>
+      maxUrange: 15.0  
+      linearUpdate: 0.1 
+      angularUpdate: 0.05 
+      particles: 50
+      map_update_interval: 0.1
+      minimumScore: 10
+      
+    </rosparam>
+<!-- Alternative way to set parameters follows -->
+<!--      
+	  <param name="maxUrange" value="80.0"/>  
+          <param name="linearUpdate" value="0.1"/> 
+          <param name="angularUpdate" value="0.1"/> 
+          <param name="particles" value="60"/>
+	  <param name="map_update_interval" value="2"/>
+-->
+  </node>
+<!--
+  <node pkg="localization" type="localization" name="SUEKF"  output="screen">
+  </node>
+-->
+
+<!--
+  <node pkg="rviz" type="rviz" name="rviz" args="-d /home/mjtp/catkin_ws/src/udm_ros_Tutorial/random_walk/rviz_randomwalk.rviz" output="screen">
+</node>
+-->
+
+</launch>
